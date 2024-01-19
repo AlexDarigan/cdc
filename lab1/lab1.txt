@@ -3,6 +3,39 @@ Lab 1:
 
 2. The cloud is almost everywhere in our lives now. What do you think are the fundamental reasons behind its success? Name three pros and three cons of cloud.
 
+Pros
+
+    Accessibility
+    
+        The cloud allows us to access all of our data from anywhere at anytime provided we have a functional networked device.
+
+    Storage
+    
+        By loading off resources to the cloud, we have more available storage on our personal devices
+     
+    Disaster Recovery
+    
+        When a single device fails, any data on that device may be lost forever. With cloud, redundancy is built into data storage that helps
+        prevent that data from being completely lost despite disasters.
+
+Cons
+    
+    Network Reliance
+
+        Without access to any functional network connection, none of the data in the cloud may be accessed. Additionally, depending on the size of
+        the data, it might take a while to transfer from the cloud to physical devices. 
+
+    Security
+
+        Any data available on the cloud has a larger attack vector. Since any machine with a network connection can access the cloud, that means bad actors
+        may also access it, if they find any vunerable exploits.
+
+    Control
+
+        You usually don't own your own cloud storage. Individuals and Businesses alike tend to pay a subscription service to a cloud storage provider (after the
+        free tier limits have been passed). This means your cloud storage provider is in control of your data, it is as secure as they are. You may not want to store
+        some of your more sensitive data due to this.
+
 3. What is the primary function of a hypervisor in virtualization?
 
 4. What is a virtual machine (VM)?
