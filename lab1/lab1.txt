@@ -38,11 +38,25 @@ Cons
 
 3. What is the primary function of a hypervisor in virtualization?
 
+    A Hypervisor's primary function is to enable the creation and management of virtual machines on the physical host device. 
+
 4. What is a virtual machine (VM)?
+
+    A Virtual Machine is software that emulates a computer system, allowing the user to run multiple operating systems
+    on the physical host device.
 
 5. What are the benefits of using virtual machines?
 
+    Some of the benefits of Virtual Machines allow for optimized use of resources, isolation of unique development enviroments, 
+    and reduce the need for multiple physical devices. 
+
 6. List five use cases of virtual machines.
+
+    1. Server Consolidation - Deploying multiple servers on a single physical device for the sake of efficient resource usage
+    2. Development & Testing - Virtualization allows developers test code in multiple unique enviroments without requiring multiple devices
+    3. Resource Isolation - Isolating resources improves security but allowing executable code only work within the guest virtual machine instead of the host system
+    4. Temporary Workloads - Virtual Machines may be deployed on a task-by-task basis and can be discarded and or shut down when not in use.
+    5. Application Compatiability - Enviroments can be created to run applications that do not work well with the host operating system
 
 7. In virtualization, what is the guest operating system?
 
@@ -57,3 +71,26 @@ Cons
     c) It allows virtual machines to be moved between different physical machines with compatible hypervisors.
 
 10. What is the purpose of cloning a virtual machine?
+
+    Some key purposes of cloning a virtual machine are as follows:
+
+        Scaling
+        
+            When dealing with tasks that cannot be handled by one virtual machine, the developer can clone the initial configuration and then deploy
+            multiple instances of it to handle all available tasks
+
+        Parallel Processing
+
+            By cloning a virtual machine, developers can reduce the time a task requires to compeltely succssfully by running each instance in
+            parallel (at the same time ).
+
+        Disaster Recovery / Snapshots
+
+            Clones of a virtual machine may act as a snapshot of the state of that machine at the time of cloning. This helps increase redundancy
+            in case of failure.
+
+        Rapid Deployment
+
+            Cloning a virtual machine allows users to deploy multiple instances easily without the need for major additional configuration, which in turn
+            helps enable scaling and parallel processing.
+            
