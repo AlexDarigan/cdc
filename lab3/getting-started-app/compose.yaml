@@ -1,0 +1,37 @@
+# Services are all the different containers we want to run
+services:
+
+  # Our initial App Service
+  app:
+    image: node:18-alpine
+    command: sh -c "yarn install && yarn run dev"
+    ports:
+      - 127.0.0.1:3000:3000
+
+    # Working Dir relative and our volumes for persistence
+    working_dir: /app
+    volumes:
+      - ./:/app
+
+    # Defining Enviroment Variables
+    environment:
+      MYSQL_HOST: mysql
+      MYSQL_USER: root
+      MYSQL_PASSWORD: secret
+      MYSQL_DB: todos
+
+  # Defining our MySQL Service
+  mysql:
+    image: mysql:8.0
+
+    # Defining our MySQL Mapping (this happened automatically 
+    # ..but requires us to be explicit here)
+    volumes:
+      - todo-mysql-data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_DATABASE: todos
+
+# Defining all of the volumes we're using, you can see this referenced in the MySQL Services
+volumes:
+  todo-mysql-data:
